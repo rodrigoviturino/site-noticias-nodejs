@@ -1,18 +1,15 @@
-const express = require('express');
-const app = express();
+const app = require('./config/server');
 
-app.get('/', function(req,res){
-    res.send("<html><body><h1>Portal de noticias</h1></body></html>");
-});
+let rotaNoticias = require('./app/routes/noticias');
+rotaNoticias(app);
 
+let rotaHome = require('./app/routes/home');
+rotaHome(app);
 
-app.get('/teste', function(req,res){
-    res.send("<html><body><h1>Portal de Testes</h1></body></html>");
-});
-
-
+let rotaFormInclusaoNoticia = require('./app/routes/formulario_inclusao_noticia');
+rotaFormInclusaoNoticia(app);
 
 app.listen(3000, function(){
-    console.log('Servidor Ativado com Express');
+    console.log('Servidor ON');    
     
 });
