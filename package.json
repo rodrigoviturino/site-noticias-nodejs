@@ -1,0 +1,23 @@
+{
+  "name": "curso_node_udemy",
+  "version": "1.0.0",
+  "description": "Site de noticias",
+  "main": "noticias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigoviturino/site-noticias-nodejs.git"
+  },
+  "author": "Rodrigo Viturino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigoviturino/site-noticias-nodejs/issues"
+  },
+  "homepage": "https://github.com/rodrigoviturino/site-noticias-nodejs#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
