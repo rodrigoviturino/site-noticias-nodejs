@@ -9,6 +9,8 @@ const app = require('./config/server');
 // let rotaFormInclusaoNoticia = require('./app/routes/formulario_inclusao_noticia');
 // rotaFormInclusaoNoticia(app);
 
+
+// CONFIG SERVIDOR
 app.listen(3000, function(){
     console.log('Servidor ON');    
     
